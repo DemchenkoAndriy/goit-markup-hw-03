@@ -12,6 +12,8 @@
   --primary-background-color: #fff;
   --background-card: #f5f4fa;
   --background-footer: #2f303a;
+  /* border */
+  --border-card: #eeeeee;
 }
 
 * {
@@ -62,10 +64,15 @@ body {
   margin-right: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ----- header ----- */
 .header {
   background-color: var(--primary-background-color);
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-card);
 }
 
 .header-logo {
@@ -206,10 +213,6 @@ body {
   margin-bottom: 10px;
 }
 
-.feature-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 /* Чим ми займаємося */
 .activity-list {
   display: flex;
@@ -220,8 +223,8 @@ body {
   display: block;
 }
 
-.activity-container {
-  padding-bottom: 94px;
+.activity-section {
+  padding-top: 0;
 }
 
 /* ----- Команда ----- */
@@ -230,6 +233,9 @@ body {
 }
 .team-item {
   background-color: var(--primary-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
@@ -261,11 +267,6 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* ----- footer ----- */
@@ -325,7 +326,6 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -357,7 +357,6 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 .card-img {
@@ -365,11 +364,11 @@ body {
 }
 
 .portfolio-card {
-  border: 1px solid #eeeeee;
   width: calc((100% - 2 * 30px) / 3);
 }
 
 .card-description {
+  border: 1px solid var(--border-card);
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
