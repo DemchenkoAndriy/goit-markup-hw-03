@@ -217,7 +217,7 @@ body {
 }
 
 .feature-item {
-  width: calc((100% - 3 * 30px) / 4);
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 /* Чим ми займаємося */
